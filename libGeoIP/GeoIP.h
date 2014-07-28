@@ -183,6 +183,8 @@ extern GEOIP_DATA const char *GeoIPLocationADBFileName;
 extern GEOIP_DATA const char *GeoIPAccuracyRadiusFileName;
 extern GEOIP_DATA const char *GeoIPCityConfidenceFileName;
 extern char * GeoIP_custom_directory;
+extern void (*GeoIP_filename_lock)(void);
+extern void (*GeoIP_filename_unlock)(void);
 
 /* Warning: do not use those arrays as doing so may break your
  * program with newer GeoIP versions */
